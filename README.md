@@ -1,4 +1,4 @@
-# buzzline-01-case
+# buzzline-01-DebStCyr
 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 
