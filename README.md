@@ -81,3 +81,31 @@ We will get a good amount of practice.
 This project is licensed under the MIT License as an example project. 
 You are encouraged to fork, copy, explore, and modify the code as you like. 
 See the [LICENSE](LICENSE.txt) file for more.
+
+---
+
+## Custom Producer & Consumer St. Cyr
+
+In addition to the example scripts, this project includes my own custom producer and consumer.
+
+### What’s unique?
+- Producer (`basic_producer_stcyr.py`) generates identifiable messages with fields like `truck`, `order`, and `sensor`.
+- Consumer (`basic_consumer_stcyr.py`) performs simple real-time analytics and raises alerts when:
+  - `status=freezer_failure`
+  - `temp_c >= 8`
+  - `order status=cancelled`
+
+### How to Run
+
+#### Windows
+```powershell
+.venv\Scripts\activate
+py -m producers.basic_producer_stcyr
+
+#### In a separate terminal:
+.venv\Scripts\activate
+py -m consumers.basic_consumer_stcyr
+
+#### In a separate terminal:
+source .venv/bin/activate
+python3 -m consumers.basic_consumer_stcyr
