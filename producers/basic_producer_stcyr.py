@@ -53,6 +53,8 @@ def get_message_interval() -> int:
     logger.info(f"Messages will be sent every {interval} seconds.")
     return interval
 
+# Get interval (in seconds) from environment or default
+interval_secs = get_message_interval()
 
 #####################################
 # Define global variables
