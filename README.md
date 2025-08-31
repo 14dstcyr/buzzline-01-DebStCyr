@@ -1,4 +1,5 @@
-# buzzline-01-case
+# buzzline-01-DebStCyr
+>>>>>>> f1b988854de684db71db0472746889ac9f813154
 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 
@@ -70,6 +71,11 @@ Mac/Linux:
 source .venv/bin/activate
 python3 -m consumers.basic_consumer_case
 ```
+<<<<<<< HEAD
+=======
+## How to Stop the Processes
+Stop a continuous process (kill it) by selecting the terminal and hitting CTRL+c (press CTRL key and c key at the same time).
+>>>>>>> f1b988854de684db71db0472746889ac9f813154
 
 ## Save Space
 To save disk space, you can delete the .venv folder when not actively working on this project.
@@ -81,3 +87,34 @@ We will get a good amount of practice.
 This project is licensed under the MIT License as an example project. 
 You are encouraged to fork, copy, explore, and modify the code as you like. 
 See the [LICENSE](LICENSE.txt) file for more.
+<<<<<<< HEAD
+=======
+
+---
+
+## Custom Producer & Consumer St. Cyr
+
+In addition to the example scripts, this project includes my own custom producer and consumer.
+
+### What’s unique?
+- Producer (`basic_producer_stcyr.py`) generates identifiable messages with fields like `truck`, `order`, and `sensor`.
+- Consumer (`basic_consumer_stcyr.py`) performs simple real-time analytics and raises alerts when:
+  - `status=freezer_failure`
+  - `temp_c >= 8`
+  - `order status=cancelled`
+
+### How to Run
+
+#### Windows
+```powershell
+.venv\Scripts\activate
+py -m producers.basic_producer_stcyr
+
+#### In a separate terminal:
+.venv\Scripts\activate
+py -m consumers.basic_consumer_stcyr
+
+#### In a separate terminal:
+source .venv/bin/activate
+python3 -m consumers.basic_consumer_stcyr
+>>>>>>> f1b988854de684db71db0472746889ac9f813154

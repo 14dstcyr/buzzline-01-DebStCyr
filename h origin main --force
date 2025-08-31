@@ -1,0 +1,76 @@
+[33mcommit 3b48f5165075026d7de9cdee64b837753c9fe9b1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 69738d4 5099677
+Author: Deb St. Cyr <S568800@nwmissouri.edu>
+Date:   Sat Aug 30 17:04:21 2025 -0500
+
+    Merge branch 'main' of https://github.com/14dstcyr/buzzline-01-DebStCyr
+
+[33mcommit 69738d4fd52c2b227398ddd7266805e540eec392[m
+Author: Deb St. Cyr <S568800@nwmissouri.edu>
+Date:   Sat Aug 30 17:04:13 2025 -0500
+
+    Created a unique producer
+
+ README.md                         |  28 [32m++++++++[m
+ producers/basic_producer_stcyr.py | 130 [32m++++++++++++++++++++++++++++++++++++++[m
+ 2 files changed, 158 insertions(+)
+
+[33mcommit 50996771c4fde82b4e187a03b0163d4e08f5c00b[m
+Author: Deb St. Cyr <156037147+14dstcyr@users.noreply.github.com>
+Date:   Sat Aug 30 13:23:03 2025 -0500
+
+    Update README.md
+
+ README.md | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+
+[33mcommit d541cd2c3b490dd784aa2cf3aaa9f98140f32734[m
+Author: Deb St. Cyr <S568800@nwmissouri.edu>
+Date:   Thu Aug 28 13:32:52 2025 -0500
+
+    Changed the buzzline name
+
+ README.md | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 6ed792ba4d509dabe7e1130242a26e75f1886e10[m
+Author: 14dstcyr <S568800@nwmissouri.edu>
+Date:   Tue Aug 26 19:07:53 2025 -0500
+
+    Initial commit
+
+ requirements.txt | 100 [32m++++++[m[31m-------------------------------------------------[m
+ spark_test.py    |  15 [32m+++++++++[m
+ 2 files changed, 26 insertions(+), 89 deletions(-)
+
+[33mcommit 177603ca45c1489da48d52453e6e4d7383cc7cd6[m
+Author: Deb St. Cyr <156037147+14dstcyr@users.noreply.github.com>
+Date:   Mon Aug 25 20:20:13 2025 -0500
+
+    Initial commit
+
+ .env                                        |  20 [32m+++++[m
+ .gitignore                                  |  13 [32m+++[m
+ LICENSE.txt                                 |  21 [32m+++++[m
+ README.md                                   |  83 [32m++++++++++++++++++[m
+ consumers/__init__.py                       |   0
+ consumers/basic_consumer_case.py            |  94 [32m++++++++++++++++++++[m
+ docs/FORK-THIS-REPO.md                      |  75 [32m++++++++++++++++[m
+ docs/GIT-ADD-COMMIT-PUSH.md                 |  46 [32m++++++++++[m
+ docs/MANAGE-VENV.md                         |  59 [32m+++++++++++++[m
+ docs/PYTHON-PKG-IMPORTS.md                  |  25 [32m++++++[m
+ docs/PYTHON-VERSIONS.md                     |  17 [32m++++[m
+ docs/SETUP-MAC-LINUX.md                     |  92 [32m++++++++++++++++++++[m
+ docs/SETUP-WINDOWS.md                       |  75 [32m++++++++++++++++[m
+ docs/USING-TERMINALS.md                     |  28 [32m++++++[m
+ images/select-intepreter.png                | Bin [31m0[m -> [32m95500[m bytes
+ images/venv-activate.png                    | Bin [31m0[m -> [32m92138[m bytes
+ images/venv-create.png                      | Bin [31m0[m -> [32m76400[m bytes
+ images/venv-install-basics.png              | Bin [31m0[m -> [32m88101[m bytes
+ images/venv-install-reqmts-takes-awhile.png | Bin [31m0[m -> [32m90584[m bytes
+ producers/__init__.py                       |   0
+ producers/basic_producer_case.py            | 130 [32m++++++++++++++++++++++++++++[m
+ requirements.txt                            |  89 [32m+++++++++++++++++++[m
+ utils/__init__.py                           |   0
+ utils/utils_logger.py                       |  71 [32m+++++++++++++++[m
+ 24 files changed, 938 insertions(+)
