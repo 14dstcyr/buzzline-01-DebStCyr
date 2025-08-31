@@ -79,11 +79,19 @@ def generate_messages():
     while True:
         messages = [
             "truck|temp_c=3|status=ok",
-            "truck|temp_c=9|status=freezer_failure",
+            "truck|temp_c=2|status=ok",
+            "truck|temp_c=5|status=ok",
+            "truck|temp_c=4|status=ok",
             "order|id=101|status=shipped",
+            "order|id=103|status=processing",
+            "order|id=104|status=shipped",
+            "sensor|id=S17|vibration=0.12|status=ok",
+            "sensor|id=S18|vibration=0.15|status=ok",
+            # Alerts (fewer than normals)
+            "truck|temp_c=9|status=freezer_failure",
             "order|id=102|status=cancelled",
             "sensor|id=S17|vibration=0.44|status=high",
-        ]
+]
 
         # pick one message at random
         payload = random.choice(messages)
