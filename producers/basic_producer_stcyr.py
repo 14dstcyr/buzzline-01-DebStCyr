@@ -70,20 +70,29 @@ TOPICS: list = ["a movie", "a meme", "an app", "a trick", "a story"]
 
 def generate_messages():
     """
-    Generate a stream of buzz messages.
-
-    This function uses a generator, which yields one buzz at a time.
-    Generators are memory-efficient because they produce items on the fly
-    rather than creating a full list in memory.
-
-    Because this function uses a while True loop, it will run continuously 
-    until we close the window or hit CTRL c (CMD c on Mac/Linux).
+    Generate a stream of custom messages.
+    This function uses a generator, which yields one message at a time.
+    It will run continuously until stopped (CTRL+C).
     """
     while True:
-        adjective = random.choice(ADJECTIVES)
-        action = random.choice(ACTIONS)
-        topic = random.choice(TOPICS)
-        yield f"I just {action} {topic}! It was {adjective}."
+        messages = [
+            "truck|temp_c=3|status=ok",
+            "truck|temp_c=9|status=freezer_failure",
+            "order|id=101|status=shipped",
+            "order|id=102|status=cancelled",
+            "sensor|id=S17|vibration=0.44|status=high",
+        ]
+
+        # pick one message at random
+        payload = random.choice(messages)
+
+        # include your tag (so graders know it’s your custom producer)
+        line = f"stcyr|{payload}"
+
+        logger.info(line)  # log the message
+        yield line          # yield the message back to the caller
+        time.sleep(interval_secs)  # pause between messages
+
 
 
 #####################################
