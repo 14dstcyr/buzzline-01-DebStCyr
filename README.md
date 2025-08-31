@@ -1,12 +1,13 @@
-# buzzline-01-DebStCyr
->>>>>>> f1b988854de684db71db0472746889ac9f813154
+# Buzzline Streaming Project StCyr
 
-![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+This project demonstrates real-time streaming analytics in Python using producers and consumers.  
+It builds on the provided course template and extends it with my own custom producer and consumer.  
 
-This project introduces streaming data. 
-The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
-As the code runs, it will continuously update the log file. 
-We'll use a consumer to monitor the log file and alert us when a special message is detected. 
+- The **producer** generates identifiable messages about trucks, orders, and sensors.  
+- The **consumer** monitors those messages in real time and raises alerts for freezer failures, cancelled orders, and high temperatures.  
+- Both scripts run together to show how data can be produced, consumed, and analyzed continuously.  
+
+--- 
 
 ## Task 1. Set Up Your Machine & Sign up for GitHub
 
@@ -71,11 +72,8 @@ Mac/Linux:
 source .venv/bin/activate
 python3 -m consumers.basic_consumer_case
 ```
-<<<<<<< HEAD
-=======
 ## How to Stop the Processes
 Stop a continuous process (kill it) by selecting the terminal and hitting CTRL+c (press CTRL key and c key at the same time).
->>>>>>> f1b988854de684db71db0472746889ac9f813154
 
 ## Save Space
 To save disk space, you can delete the .venv folder when not actively working on this project.
@@ -87,34 +85,29 @@ We will get a good amount of practice.
 This project is licensed under the MIT License as an example project. 
 You are encouraged to fork, copy, explore, and modify the code as you like. 
 See the [LICENSE](LICENSE.txt) file for more.
-<<<<<<< HEAD
-=======
 
----
-
-## Custom Producer & Consumer St. Cyr
+## Custom Producer & Consumer (stcyr)
 
 In addition to the example scripts, this project includes my own custom producer and consumer.
 
 ### What’s unique?
-- Producer (`basic_producer_stcyr.py`) generates identifiable messages with fields like `truck`, `order`, and `sensor`.
-- Consumer (`basic_consumer_stcyr.py`) performs simple real-time analytics and raises alerts when:
+- **Producer (`basic_producer_stcyr.py`)**  
+  Generates identifiable messages with fields like `truck`, `order`, and `sensor`.  
+  Includes both normal and alert cases.
+- **Consumer (`basic_consumer_stcyr.py`)**  
+  Performs simple real-time analytics and raises alerts when:
   - `status=freezer_failure`
   - `temp_c >= 8`
-  - `order status=cancelled`
+  - `status=cancelled`
 
-### How to Run
+---
 
-#### Windows
+### How to Run (Windows PowerShell)
+
+**Terminal 1 – Producer**
 ```powershell
 .venv\Scripts\activate
 py -m producers.basic_producer_stcyr
 
-#### In a separate terminal:
 .venv\Scripts\activate
 py -m consumers.basic_consumer_stcyr
-
-#### In a separate terminal:
-source .venv/bin/activate
-python3 -m consumers.basic_consumer_stcyr
->>>>>>> f1b988854de684db71db0472746889ac9f813154
