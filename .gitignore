@@ -1,13 +1,49 @@
 # This .gitignore file lists content that does NOT need to be tracked in GitHub project history
 
-# Python virtual environment folder
-.venv/
+# ------------------------
+# Python + VS Code .gitignore
+# ------------------------
 
-# Visual Studio Code settings and workspace folder
+# Virtual environments
+.venv/
+env/
+venv/
+
+# VS Code settings
 .vscode/
 
-# Compiled Python files
+# Python cache / compiled files
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# macOS system files
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Test / coverage reports
+.coverage
+*.cover
+*.py,cover
+*.log
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Logs (prevent giant log files!)
+*.log
+logs/
+
+# OS-specific files
 .DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.swp
+*.swo
